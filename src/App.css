@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  box-sizing: border-box;
+  font-family: "Vazir";
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+body {
+  background-color: var(--themeBg) !important;
+}
+
+/* __________color_________ */
+
+:root {
+  --themeColor: #dd2c00;
+  --themeBg: #fcfcfc;
+  --shadow: rgba(0, 0, 0, 0.15);
+}
+
+/*  Vazir  */
+@font-face {
+  font-family: "Vazir";
+  src: url("../public/font/Vazir/Vazir.eot");
+  src: url("../public/font/Vazir/Vazir.eot?#iefix") format("embedded-opentype"),
+    url("../public/font/Vazir/Vazir.woff2") format("woff2"),
+    url("../public/font/Vazir/Vazir.woff") format("woff"),
+    url("../public/font/Vazir/Vazir.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*  Shabnam  */
+@font-face {
+  font-family: "Shabnam";
+  src: url("../public/font/Shabnam/Shabnam.eot");
+  src: url("../public/font/Shabnam/Shabnam.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/font/Shabnam/Shabnam.woff2") format("woff2"),
+    url("../public/font/Shabnam/Shabnam.woff") format("woff"),
+    url("../public/font/Shabnam/Shabnam.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

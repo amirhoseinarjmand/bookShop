@@ -1,0 +1,95 @@
+.bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 95%;
+  margin: 0 auto;
+  padding: 0 4.8rem;
+  padding-top: 0.85rem;
+  background-color: var(--themeColor);
+  color: #fff;
+  border-bottom-left-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+  transition: 0.5s;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.active {
+  position: fixed;
+  top: 80px;
+  right: 0;
+  left: 0;
+  height: 20px;
+  z-index: 4;
+  box-shadow: 0 0.05rem 1rem var(--shadow) !important;
+}
+
+.active:hover {
+  height: 45px;
+}
+
+.bottom > ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin: 0;
+  transition: 0.5s;
+}
+
+.bottom > ul > li {
+  position: relative;
+  padding-bottom: 1rem;
+  cursor: pointer;
+}
+
+.bottom > ul > li:hover {
+  font-weight: bold;
+  color: #000;
+}
+
+/* ___________ ul active ___________ */
+
+.active > ul {
+  transform: translateY(-100%);
+}
+
+.active:hover > ul {
+  transform: translateY(0);
+}
+
+/* ___________ subMenu ___________ */
+
+.subMenu {
+  display: none;
+  list-style-type: none;
+  padding: 5px 0;
+  right: 0;
+  position: absolute;
+  width: 200px;
+  top: 2.5rem;
+  background-color: #fff;
+  border: 1px solid rgba(128, 128, 128, 0.332);
+  z-index: 2;
+}
+
+.bottom > ul > li:hover > ul {
+  display: block;
+}
+
+.subMenu > li {
+  color: rgba(0, 0, 0, 0.758);
+  font-size: 1rem;
+  padding: 5px;
+  padding-right: 0.5rem;
+}
+
+.subMenu > li:hover {
+  cursor: pointer;
+  background-color: #eceff1;
+}

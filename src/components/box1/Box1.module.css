@@ -1,0 +1,62 @@
+.Box1 {
+  position: relative;
+  margin: 0 auto;
+  width: 74vw;
+  max-width: 1200px;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 4rem -1rem rgba(87, 87, 87, 0.15) !important;
+}
+
+.info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 20px 15px 2px 15px;
+  cursor: pointer;
+}
+
+.info:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  right: -5px;
+  top: 50%;
+  height: 63px;
+  transform: translateY(-50%);
+  width: 5px;
+  box-shadow: -9px 0 24px rgb(0 0 0 / 20%);
+}
+
+.info > :nth-child(2) {
+  font-size: 0.79rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.info > :nth-child(3) {
+  font-size: 0.7rem;
+  color: gray;
+}
+
+.info > span {
+  position: absolute;
+  bottom: 10px;
+  right: 50%;
+  transform: translateX(50%);
+  height: 1.5px;
+  width: 0;
+  background-color: var(--themeColor);
+  transition: 0.3s ease-in-out;
+}
+
+.info:hover > span {
+  width: 75%;
+}

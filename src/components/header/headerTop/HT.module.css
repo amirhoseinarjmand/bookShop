@@ -1,0 +1,96 @@
+.top {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+  border-bottom: 0.5px solid rgba(128, 128, 128, 0.332);
+  z-index: 5;
+}
+
+.active {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 5rem;
+}
+
+/* ___________ logo ___________ */
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 8.7rem;
+}
+
+/* ___________ search ___________ */
+
+.search {
+  width: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(128, 128, 128, 0.332);
+}
+
+.search > input {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-left: 1px solid rgba(128, 128, 128, 0.332);
+  border-radius: 0;
+  background-color: #fff;
+  padding: 5px;
+}
+
+.search > :nth-child(2) {
+  cursor: pointer;
+}
+
+/* ___________ Login ___________ */
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 1px solid rgba(128, 128, 128, 0.332);
+  cursor: pointer;
+}
+
+.login:hover {
+  background-color: rgba(128, 128, 128, 0.215);
+}
+
+.login > span {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/* ___________ top_left ___________ */
+
+.top_left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.iconShop {
+  position: relative;
+}
+
+.iconShop > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  border-radius: 50%;
+  width: 17px;
+  height: 17px;
+  padding-top: 7px;
+  cursor: pointer;
+}
